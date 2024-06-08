@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animasi Fade In dan Fade Out</title>
+<style>
+  .fade-in-out {
+    opacity: 0;
+    animation: fadeInOut 3s infinite alternate; /* 3s untuk durasi animasi */
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="fade-in-out">
+  <p>Contoh teks untuk animasi fade in dan fade out.</p>
+</div>
+
+</body>
+</html>
