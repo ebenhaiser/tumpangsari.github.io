@@ -239,7 +239,7 @@
 
   function scrollFunction() {
     var backButton = document.querySelector('.back-to-top');
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       if (!backButton.classList.contains('show')) {
         backButton.classList.add('show');
         backButton.style.animation = 'none'; // Menghentikan animasi saat ditambahkan kelas 'show'

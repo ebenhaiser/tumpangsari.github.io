@@ -240,6 +240,12 @@ header .navbar.navbar-light .nav-link.active {
   height: 100vh;
 }
 
+@media (max-width: 1199.98px) {
+  .site-hero {
+    background-position: top;
+  }
+}
+
 .site-hero > .container {
   position: relative;
   z-index: 2;
@@ -247,6 +253,7 @@ header .navbar.navbar-light .nav-link.active {
 
 .site-hero.overlay {
   position: relative;
+  justify-content: center;
 }
 
 .site-hero.overlay:before {
@@ -1873,7 +1880,7 @@ footer .credits {
 }
 
 .footer-hero.overlay h1 {
-  font-size: 60px;
+  font-size: 30px;
 }
 
 @media (max-width: 1199.98px) {
@@ -1894,7 +1901,7 @@ footer .credits {
 
 /* SCROLL TO TOP BUTTON */
 .back-to-top {
-  display: none;
+  /* display: none; */
   width: 50px;
   height: 50px;
   position: fixed;
@@ -1905,7 +1912,8 @@ footer .credits {
   text-align: center;
   z-index: 999;
   opacity: 0;
-  animation: fadeOut 0.3s ease-in forwards;
+  /* animation: fadeOut 0.3s ease-in forwards; */
+  transition: all 0.4s;
 }
 
 .back-to-top img {
@@ -1915,14 +1923,15 @@ footer .credits {
   filter: invert(100%);
 }
 
-.back-to-top:hover {
+/* .back-to-top:hover {
   background-color: #c9ac88;
-}
+} */
 
 .back-to-top.show {
-  display: block;
+  /* display: block; */
+  visibility: visible;
   opacity: 1;
-  animation: fadeIn 0.3s ease-in forwards;
+  /* animation: fadeIn 0.3s ease-in forwards; */
 }
 
 .back-to-top.hide {
