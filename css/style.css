@@ -147,8 +147,10 @@ header .navbar .nav-link {
   }
 }
 
-header .navbar .nav-link:hover {
-  color: #fff !important;
+@media (min-width: 991.98px) {
+  header .navbar .nav-link:hover {
+    color: #fff !important;
+  }
 }
 
 header .navbar .nav-link.active {
@@ -1735,7 +1737,7 @@ textarea.form-control {
 }
 
 .backgroundColor {
-  background-color: #f8f9fa;
+  background-color: #ffffff;
 }
 
 .icon-container {
@@ -1899,6 +1901,10 @@ footer .credits {
   }
 }
 
+.footer-hero .container a {
+  padding: 0 1em;
+}
+
 /* SCROLL TO TOP BUTTON */
 .back-to-top {
   /* display: none; */
@@ -1954,4 +1960,12 @@ footer .credits {
   100% {
     opacity: 0;
   }
+}
+
+.background-white {
+  background-color: #ffffff;
+}
+
+.background-grey {
+  background-color: #f8f9fa;
 }

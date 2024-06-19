@@ -179,7 +179,7 @@
     var header = document.getElementById('header');
 
     // Tambahkan atau hapus kelas 'header-scrolled' berdasarkan posisi scroll
-    if (window.scrollY > 50) {
+    if (window.scrollY > 100) {
       header.classList.add('header-scrolled');
     } else {
       header.classList.remove('header-scrolled');
@@ -200,25 +200,27 @@
           const sectionTop = section.offsetTop;
           const sectionHeight = section.offsetHeight;
 
-          if (isMobile || scrollPos >= sectionTop - 10) {
-            if (scrollPos >= sectionTop - (isMobile ? 0 : 0) && scrollPos < sectionTop + sectionHeight) {
+          if (isMobile || scrollPos >= sectionTop - 300) {
+            if (scrollPos >= sectionTop - 300 && scrollPos < sectionTop + sectionHeight - 300) {
               link.classList.add('active-section');
             } else {
               link.classList.remove('active-section');
             }
-          } else {
-            link.classList.remove('active-section');
+            } else {
+              link.classList.remove('active-section');
           }
         }
       });
     };
+
+
 
     navLinks.forEach(link => {
       link.addEventListener('click', function(event) {
         event.preventDefault();
         const section = document.querySelector(this.getAttribute('href'));
         const isMobile = window.innerWidth <= 992;
-        const offset = isMobile ? 0 : -10;
+        const offset = isMobile ? 0 : 50;
 
         if (section) {
           window.scrollTo({
