@@ -220,7 +220,7 @@
         event.preventDefault();
         const section = document.querySelector(this.getAttribute('href'));
         const isMobile = window.innerWidth <= 992;
-        const offset = isMobile ? 0 : 50;
+        const offset = isMobile ? 0 : 0;
 
         if (section) {
           window.scrollTo({
@@ -260,6 +260,30 @@
       behavior: 'smooth'  
     });
   });
+
+
+  // ANIMASI SCROLL PADA ARROW KEBAWAH DI HERO
+  document.addEventListener('DOMContentLoaded', function() {
+    const animatedArrow = document.querySelector('.animated-arrow');
+  
+    animatedArrow.addEventListener('click', function(event) {
+      event.preventDefault();
+      const targetSectionId = this.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetSectionId);
+  
+      if (targetSection) {
+        const offset = 0; // Offset untuk desktop (100px sebelum bagian dimulai)
+        const isMobile = window.innerWidth <= 992;
+        const offsetScroll = isMobile ? 0 : offset;
+  
+        window.scrollTo({
+          top: targetSection.offsetTop - offsetScroll,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+  
 
 
 })(jQuery);

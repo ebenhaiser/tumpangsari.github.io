@@ -235,6 +235,17 @@ header .navbar.navbar-light .nav-link.active {
   color: #fff;
 }
 
+#hero {
+  background-image: url('../images/photoGuestHouse/terrace1Dark.jpeg');
+}
+
+@media (max-width: 768px) {
+  #hero {
+    background-image: url('../images/photoGuestHouse/terrace1DarkMobile.jpeg');
+  }
+}
+
+
 .site-hero {
   background-size: cover; /* Lebar dan tinggi 50% dari ukuran elemen */
   background-position: center center;
@@ -243,7 +254,7 @@ header .navbar.navbar-light .nav-link.active {
 }
 
 @media (max-width: 1199.98px) {
-  .site-hero {
+  .site-hero {  
     background-position: top;
   }
 }
@@ -257,6 +268,7 @@ header .navbar.navbar-light .nav-link.active {
   position: relative;
   justify-content: center;
 }
+
 
 .site-hero.overlay:before {
   content: "";
@@ -1853,7 +1865,7 @@ footer .credits {
   background-size: cover;
   background-position: center center;
   min-height: 50px;
-  height: 30vh;
+  height:5vh;
 }
 
 .footer-hero > .container {
@@ -1882,12 +1894,16 @@ footer .credits {
 }
 
 .footer-hero.overlay h1 {
-  font-size: 30px;
+  font-size: 20px;
+}
+
+.footer-hero.overlay h3 {
+  font-size: 20px;
 }
 
 @media (max-width: 1199.98px) {
   .footer-hero.overlay h1 {
-    font-size: 40px;
+    font-size: 20px;
   }
 }
 
@@ -1968,4 +1984,29 @@ footer .credits {
 
 .background-grey {
   background-color: #f8f9fa;
+}
+
+/* ANIMASI SCROLL PADA ARROW KEBAWAH DI HERO */
+.animated-arrow {
+  display: inline-block;
+  position: relative;
+  font-size: 4rem;
+  color: #ffffff; /* Adjust the color as needed */
+}
+
+.animated-arrow i {
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }
