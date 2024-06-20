@@ -236,12 +236,12 @@ header .navbar.navbar-light .nav-link.active {
 }
 
 #hero {
-  background-image: url('../images/photoGuestHouse/terrace1Dark.jpeg');
+  background-image: url('../images/index/hero.jpeg');
 }
 
 @media (max-width: 768px) {
   #hero {
-    background-image: url('../images/photoGuestHouse/terrace1DarkMobile.jpeg');
+    background-image: url('../images/index/heroMobile.jpeg');
   }
 }
 
@@ -2064,3 +2064,4 @@ footer .credits {
   border-radius: 15px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Adjust shadow values as needed */
 }
+

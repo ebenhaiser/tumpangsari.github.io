@@ -1,66 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tumpang Sari Doa</title>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Copy to Clipboard</title>
 </head>
 <body>
-  <!-- Contact -->
-  <section id="contact" class="site-section background-white">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-12 heading-wrap text-center">
-          <h4 class="sub-heading">Tumpang Sari Doa</h4>
-            <h2 class="heading">Contact</h2>
-            </br>
-
-            <div class="row text-center justify-content-center">
-              
-              <div class="col-md-3">
-                <span class="fa-stack fa-2x">
-                  <a href="https://github.com/ebenhaiser" target="_blank">
-                    <div class="icon-container ">
-                      <img src="images/icon/address.png" alt="Icon" class="text-white">
-                    </div>
-                  </a>                    
-                </span>
-                <h4 class="my-3">Address</h4>
-                <a>Gg. Kenari Indah I, Miliran UH 2 </br> D.I. Yogyakarta</a>
-                </br>
-                </br>
-              </div>
-
-              <div class="col-md-3">
-                <span class="fa-stack fa-2x">
-                  <div class="icon-container">
-                    <img src="images/icon/whatsapp.png" alt="Icon" class="text-white">
-                  </div>                    
-                </span>
-                <h4 class="my-3">Whatsapp</h4>
-                <p class="text-muted">+62-0813-1895-6813</p>
-                </br>
-                </br>
-              </div>
-
-              <div class="col-md-3">
-                <span class="fa-stack fa-2x">
-                  <div class="icon-container">
-                    <img src="images/icon/email.png" alt="Icon" class="text-white">
-                  </div>                    
-                </span>
-                <h4 class="my-3">Email</h4>
-                <p class="text-muted">email@domain.com</p>
-                </br>
-                </br>
-              </div>
-              
-            </div>
-            
-        </div>
-      </div>
-    </div>
-  </section>
+    <p id="text-to-copy" onclick="copyToClipboard()">Klik teks ini untuk menyalin ke clipboard</p>
 </body>
+<script>
+
+function copyToClipboard() {
+    // Dapatkan elemen teks
+    var text = document.getElementById("text-to-copy").innerText;
+
+    // Buat elemen textarea sementara untuk menyalin teks
+    var tempInput = document.createElement("textarea");
+    tempInput.value = text;
+    document.body.appendChild(tempInput);
+
+    // Pilih dan salin teks
+    tempInput.select();
+    document.execCommand("copy");
+
+    // Hapus elemen textarea sementara
+    document.body.removeChild(tempInput);
+
+    // Opsional: Beri tahu pengguna bahwa teks telah disalin
+    alert("Copied!");
+}
+
+</script>
+
 </html>
