@@ -1753,18 +1753,31 @@ textarea.form-control {
 }
 
 .icon-container {
-  width: 120px; /* Adjust according to your icon size */
-  height: 120px; /* Adjust according to your icon size */
+  width: 62px; /* Adjust according to your icon size */
+  height: 62px; /* Adjust according to your icon size */
   border-radius: 50%; /* Makes it a circle */
   background-color: #b99365; /* Background color of the circle */
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: .3s all ease;
+}
+
+.icon-container:hover {
+  background-color: #c9ac88;
 }
 
 .icon-container img {
   width: 70%; /* Adjust the size of the icon */
   filter: invert(100%); /* Makes the icon white */
+}
+
+.contact .container .contact-list h4 {
+  font-size: 20px;
+}
+
+.contact .container .contact-list p {
+  font-size: 14px;
 }
 
 .footerIcon-container {
@@ -2009,4 +2022,45 @@ footer .credits {
   60% {
     transform: translateY(-5px);
   }
+}
+
+.contact .container .contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-left: 15px;
+}
+
+@media (min-width: 991.98px) {
+  .contact .container .contact-item {
+  margin-left: 25%;
+  }
+}
+
+.contact .container .contact-item .fa-stack {
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.contact .container .contact-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .container .contact-text h4 {
+  margin: 0;
+  /* margin-bottom: 5px; */
+  text-align: left;
+  font-size: 18px;
+}
+
+.contact .container .contact-text p {
+  margin: 0;
+  text-align: left;
+  font-size: 14px;
+}
+
+.contact .container iframe {
+  border-radius: 15px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Adjust shadow values as needed */
 }
