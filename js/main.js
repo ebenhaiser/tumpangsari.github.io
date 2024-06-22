@@ -284,7 +284,52 @@
     });
   });
   
+  document.addEventListener('DOMContentLoaded', function() {
+    const animatedArrow = document.querySelector('.scroll-to');
+  
+    animatedArrow.addEventListener('click', function(event) {
+      event.preventDefault();
+      const targetSectionId = this.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetSectionId);
+  
+      if (targetSection) {
+        const offset = 0; // Offset untuk desktop (0px sebelum bagian dimulai)
+        const isMobile = window.innerWidth <= 992;
+        const offsetScroll = isMobile ? 0 : offset;
+  
+        window.scrollTo({
+          top: targetSection.offsetTop - offsetScroll,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
 
+  document.addEventListener('DOMContentLoaded', function() {
+    const closeAndScrollButton = document.querySelector('.close-and-scroll');
+    
+    closeAndScrollButton.addEventListener('click', function(event) {
+      const targetSectionId = this.getAttribute('data-target').substring(1);
+      const targetSection = document.getElementById(targetSectionId);
+
+      // Close the modal
+      $('#moreInfoModal').modal('hide');
+
+      // Scroll to the target section after a short delay to allow modal to close
+      if (targetSection) {
+        setTimeout(() => {
+          const offset = 0; // Adjust if you need some offset
+          const isMobile = window.innerWidth <= 992;
+          const offsetScroll = isMobile ? 0 : offset;
+
+          window.scrollTo({
+            top: targetSection.offsetTop - offsetScroll,
+            behavior: 'smooth'
+          });
+        }, 500); // Adjust the delay if needed
+      }
+    });
+  });
 
 })(jQuery);
 

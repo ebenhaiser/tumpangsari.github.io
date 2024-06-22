@@ -314,6 +314,8 @@ header .navbar.navbar-light .nav-link.active {
 .room {
   background: #fff;
   margin-bottom: 30px;
+  margin-top: 10px;
+  border: 1px solid black;
 }
 
 .room figure {
@@ -328,7 +330,7 @@ header .navbar.navbar-light .nav-link.active {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #000;
+  background: #00000080;
   opacity: .5;
   content: "";
 }
@@ -366,6 +368,10 @@ header .navbar.navbar-light .nav-link.active {
   position: relative;
   top: 4px;
   margin-right: 10px;
+}
+
+.room h3{
+  color: #b99365;
 }
 
 .room-thumbnail-absolute {
@@ -2065,3 +2071,127 @@ footer .credits {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Adjust shadow values as needed */
 }
 
+.carousel-inner img {
+  border-radius: 15px;
+}
+
+.close-and-scroll {
+  font-size: 10px;
+}
+
+.modal-title {
+  color: black;
+  font-weight: 600;
+}
+
+.modal-room-info {
+  margin-top: 10px;
+  padding: 20px;
+  padding-top: 5px;
+  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.3);
+  border-radius: 15px;
+}
+
+.modal-room-info h3 {
+  margin-top: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  color: black;
+}
+
+.modal-room-info p {
+  color: #000;
+}
+
+.modal-room-info iframe {
+  max-width: 100%;
+}
+
+.modal-room-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  word-break: break-word;
+  margin: 0;
+}
+
+.modal-room-info ul li {
+  display: flex;
+  margin-bottom: 0px;
+  align-items: center;
+  color: #000;
+}
+
+.modal-room-info li:first-child {
+  margin-top: 12px;
+}
+
+.modal-room-info li:nth-child(3) {
+  margin-top: -10px; /* Menghilangkan margin bawah pada item terakhir */
+}
+
+.modal-room-info li img,
+.modal-room-info li span {
+  margin-right: 10px; /* Atur jarak antara ikon dan teks */
+}
+
+.modal-room-info .ion-ios-people-outline, 
+.modal-room-info .ion-ios-crop{
+  font-size: 25px;  
+}
+
+.modal-room-info .icon {
+  width: 20px; /* Ganti sesuai dengan ukuran yang diinginkan */
+  height: auto;
+  vertical-align: middle; /* Menyesuaikan ikon dengan teks */
+}
+
+.facilities-box
+.facilities-box::before,
+.facilities-box::after {
+  box-sizing: border-box;
+}
+
+.facilities-box .container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  /* border: 10px solid black; */
+}
+
+.facilities-box .container h3 {
+  width: flex;
+  height: 10px;
+  font-size: 14px;
+  /* font-weight: 700; */
+  /* background-color: #ffc85a; */
+  padding: 3px 8px 19px 8px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  border: 3px solid #b99365;
+  border-radius: 8px;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: normal;
+  font-family: "Rubik", arial, sans-serif;
+} 
+
+.facilities-box .container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.media figure img {
+  color: 0;
+}
+
+.modal {
+  max-width: 96%;
+}
