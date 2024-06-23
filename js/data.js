@@ -45,7 +45,7 @@ const roomsSection = {
                 {
                     imageId: 6,
                     imageActive: false,
-                    imagePath: "images/guestHouse/guestHouse7.jpg",
+                    imagePath: "images/guestHouse/guestHouse7.jpeg",
                 },
                 {
                     imageId: 7,
@@ -65,12 +65,12 @@ const roomsSection = {
                 {
                     imageId: 10,
                     imageActive: false,
-                    imagePath: "images/guestHouse/guestHouse11.jpg",
+                    imagePath: "images/guestHouse/guestHouse11.jpeg",
                 },
                 {
                     imageId: 11,
                     imageActive: false,
-                    imagePath: "images/guestHouse/guestHouse12.jpg",
+                    imagePath: "images/guestHouse/guestHouse12.jpeg",
                 },
             ],
             facilities: "<h3>Kitchen</h3><h3>Private Bathroom</h3><h3>Parking Lot</h3><h3>Internet</h3><h3>Security System</h3><h3>Central City Location</h3>",
