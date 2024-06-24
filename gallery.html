@@ -14,64 +14,157 @@
     <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css">
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    
-    <header role="banner">
-     
-      <nav class="navbar navbar-expand-md navbar-dark bg-light">
+
+<script>
+// NAVBAR KETIKA SCROLL
+window.addEventListener('scroll', function() {
+var header = document.getElementById('header');
+
+// Tambahkan atau hapus kelas 'header-scrolled' berdasarkan posisi scroll
+if (window.scrollY > 100) {
+  header.classList.add('header-scrolled');
+} else {
+  header.classList.remove('header-scrolled');
+}
+});
+
+// SCROLL TO TOP BUTTON
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var backButton = document.querySelector('.back-to-top');
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if (!backButton.classList.contains('show')) {
+      backButton.classList.add('show');
+      backButton.style.animation = 'none'; // Menghentikan animasi saat ditambahkan kelas 'show'
+      backButton.offsetHeight; // Memaksa browser memperbarui layout
+      backButton.style.animation = null; // Setel kembali animasi ke nilai awal (akan mulai lagi)
+    }
+  } else {
+    backButton.classList.remove('show');
+  }
+}
+
+document.querySelector('.back-to-top').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'  
+  });
+});
+    </script>
+
+<style>
+  /* SCROLL TO TOP BUTTON */
+.back-to-top {
+/* display: none; */
+width: 50px;
+height: 50px;
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #b99365;
+border-radius: 10px;
+text-align: center;
+z-index: 999;
+opacity: 0;
+/* animation: fadeOut 0.3s ease-in forwards; */
+transition: all 0.4s;
+}
+
+.back-to-top img {
+width: 30px;
+height: 30px;
+margin-top: 10px; /* Adjust this value to center the arrow vertically */
+filter: invert(100%);
+}
+
+/* .back-to-top:hover {
+background-color: #c9ac88;
+} */
+
+.back-to-top.show {
+/* display: block; */
+visibility: visible;
+opacity: 1;
+/* animation: fadeIn 0.3s ease-in forwards; */
+}
+
+.back-to-top.hide {
+animation: fadeOut 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+
+@keyframes fadeOut {
+0% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+</style>
+
+    <header id="header" role="banner" class="fixed-top justify-content-center header-transparent">
+      <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-light">
         <div class="container">
-          <a class="navbar-brand" href="index.html">Tumpang Sari Doa</a>
+          <a class="navbar-brand nav-link" href="index.html#hero">Tumpang Sari Doa</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
+    
           <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
             <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="rooms.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rooms</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="rooms.html">Guest House</a>
-                  <a class="dropdown-item" href="rooms.html">Woman Dormitory</a>
-                  <!-- <a class="dropdown-item" href="rooms.html">Luxury Room</a>
-                  <a class="dropdown-item" href="rooms.html">Deluxe Room</a> -->
-                </div>
-
+                <a class="nav-link" href="index.html#hero">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="facilities.html">Facilities</a>
+                <a class="nav-link" href="index.html#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="index.html#rooms">Rooms</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Gallery</a>
+                <a class="nav-link" href="index.html#facilities">Facilities</a>
               </li>
-
-               <li class="nav-item cta">
-                <a class="nav-link" href="contact.html"><span>Contact Us</span></a>
+              <li class="nav-item">
+                <a class="nav-link active">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#contact">Contact</a>
               </li>
             </ul>
-            
           </div>
         </div>
       </nav>
     </header>
-    <!-- END header -->
+    
 
-    <section class="site-hero site-hero-innerpage overlay" data-stellar-background-ratio="0.5" style="background-image: url(images/photoGuestHouse/terrace1Dark.jpeg);">
+    <a href="#" class="back-to-top"><img src="images/icon/up-arrow.png" alt="Back to Top"></a>
+
+    <section id="hero" class="site-hero site-hero-innerpage overlay" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center site-hero-inner justify-content-center">
           <div class="col-md-12 text-center">
 
-            <div class="mb-5 element-animate">
-              <h1>Facilities</h1>
+            <div class="mb-5">
+              <h1>Gallery</h1>
               <p>Pilihan Tepat untuk Liburan yang Berkesan.</p>
             </div>
 
@@ -81,78 +174,34 @@
     </section>
     <!-- END section -->
 
-    <section class="site-section">
-      <div class="container">
-        <div class="row">
-              <div class="col-md-4">
-                <h3 class="mb-5">Kitchen</h3>
-                <p class="mb-5"><img src="images/photoGuestHouse/kitchen.jpeg" alt="" class="img-fluid"></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae labore aspernatur cumque inventore voluptatibus odit doloribus! Ducimus, animi perferendis repellat. Ducimus harum alias quas, quibusdam provident ea sed, sapiente quo.</p>
-              </div>
+    <section id="gallery" class="gallery">
+      <ul class="controls">
+        <li class="buttons active" data-filter="all">All</li>
+        <li class="buttons" data-filter="terrace">Terrace</li>
+        <li class="buttons" data-filter="living-room">Living Room</li>
+        <li class="buttons" data-filter="side-garden">Side Garden</li>
+        <li class="buttons" data-filter="upstairs">Upstairs</li>
+        <!-- <li class="buttons" data-filter="corridor">Corridor</li> -->
+        <li class="buttons" data-filter="kitchen">Kitchen</li>
+        <li class="buttons" data-filter="parking-lot">Parking Lot</li>
+        <li class="buttons" data-filter="guest-house">Guest House</li>
+        <li class="buttons" data-filter="guest-house-vip">Guest House VIP</li>
+        <li class="buttons" data-filter="dormitory">Dormitory</li>
+        <li class="buttons" data-filter="apartment">Apartment</li>
+      </ul>
 
-              <div class="col-md-4">
-                <h3 class="mb-5">Private Bathroom</h3>
-                <p class="mb-5"><img src="images/photoGuestHouse/privateBathroom.jpeg" alt="" class="img-fluid"></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae labore aspernatur cumque inventore voluptatibus odit doloribus! Ducimus, animi perferendis repellat. Ducimus harum alias quas, quibusdam provident ea sed, sapiente quo.</p>
-              </div>
-
-              <div class="col-md-4">
-                <h3 class="mb-5">Parking Lot</h3>
-                <p class="mb-5"><img src="images/photoGuestHouse/parkingLot.jpeg" alt="" class="img-fluid"></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae labore aspernatur cumque inventore voluptatibus odit doloribus! Ducimus, animi perferendis repellat. Ducimus harum alias quas, quibusdam provident ea sed, sapiente quo.</p>
-              </div>
+      <div class="image-container">
+        <div id="gallery-images" class="row justify-content-center d-flex">
+          <!-- <a href="images/gallery/terrace1.jpg" class="image terrace">
+            <img src="images/gallery/terrace1.jpg" alt="Terrace">
+          </a> -->
         </div>
 
-      </br>
-      </br>
-
-        <div class="row">
-              <div class="col-md-4">
-                <h3 class="mb-5">Internet</h3>
-                <p class="mb-5"><img src="images/img_4.jpg" alt="" class="img-fluid"></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae labore aspernatur cumque inventore voluptatibus odit doloribus! Ducimus, animi perferendis repellat. Ducimus harum alias quas, quibusdam provident ea sed, sapiente quo.</p>
-              </div>
-
-              <div class="col-md-4">
-                <h3 class="mb-5">Security System</h3>
-                <p class="mb-5"><img src="images/img_4.jpg" alt="" class="img-fluid"></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae labore aspernatur cumque inventore voluptatibus odit doloribus! Ducimus, animi perferendis repellat. Ducimus harum alias quas, quibusdam provident ea sed, sapiente quo.</p>
-              </div>
-
-              <div class="col-md-4">
-                <h3 class="mb-5">Central City Location</h3>
-                <p class="mb-5"><img src="images/photoGuestHouse/centralCityLocation.jpg" alt="" class="img-fluid"></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae labore aspernatur cumque inventore voluptatibus odit doloribus! Ducimus, animi perferendis repellat. Ducimus harum alias quas, quibusdam provident ea sed, sapiente quo.</p>
-              </div>
-        </div>
-
-
-
-        </div>
-      </div>
     </section>
-    <!-- END section -->
-
-
    
-   
-
-    <section class="section-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/photoGuestHouse/terrace2Dark.jpeg);">
+    <footer id="footer" class="footer-hero overlay" data-stellar-background-ratio="0.5" style="background-color: #3f290d;">
       <div class="container">
-        <div class="row justify-content-center align-items-center intro">
-          <div class="col-md-9 text-center element-animate">
-            <h2>Relax and Enjoy your Holiday</h2>
-            <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quidem tempore expedita facere facilis, dolores!</p>
-            <div class="btn-play-wrap"><a href="https://vimeo.com/channels/staffpicks/93951774" class="btn-play popup-vimeo "><span class="ion-ios-play"></span></a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
-   
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row mb-5">
+        <!-- <div class="row mb-5">
           <div class="col-md-4">
             <h3>Phone Support</h3>
             <p>24/7 Call us now.</p>
@@ -172,7 +221,7 @@
           <div class="col-md-4">
             <h3>Address</h3>
             <p>Gg. Kenari Indah I, Miliran UH 2</p>
-            <p>D.I. Yogyakarta</p>
+            <p>D.I. Yogyakarta</p> -->
             <!-- <form action="#" class="subscribe">
               <div class="form-group">
                 <button type="submit"><span class="ion-ios-arrow-thin-right"></span></button>
@@ -182,6 +231,8 @@
             </form>
           </div>
         </div>
+
+        
         <!-- <div class="row justify-content-center"> -->
           <!-- <div class="col-md-7 text-center"> -->
             <!-- &copy; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -206,7 +257,56 @@
 
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/magnific-popup-options.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="js/data.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      const galleryImages = document.getElementById("gallery-images");
+      let galImages = "";
+
+      galleryPage.images.forEach((image) => {
+        galImages += `<a href="${image.imagePath}" class="image ${image.dataFilter}">
+                        <img src="${image.imagePath}" alt="${image.altText}">
+                      </a>`;
+
+      });
+      galleryImages.innerHTML = galImages;
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $('.buttons').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+
+            var filter = $(this).attr('data-filter');
+            
+            if(filter == 'all'){
+                $('.image').fadeIn(600);
+            }
+            else{
+                $('.image').not('.' + filter).fadeOut(400);
+                $('.image').filter('.' + filter).fadeIn(600);
+            }
+        });
+    });
+
+
+      $('.gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery:{
+          enabled:true,
+        }
+      })
+
+    </script>
   </body>
 </html>

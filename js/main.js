@@ -137,8 +137,6 @@
   	}
 	});
 
-
-// NAVBAR KETIKA SCROLL
 	var contentWayPoint = function() {
 		var i = 0;
 		$('.element-animate').waypoint( function( direction ) {
@@ -175,6 +173,7 @@
 	};
 	contentWayPoint();
 
+  // NAVBAR KETIKA SCROLL
   window.addEventListener('scroll', function() {
     var header = document.getElementById('header');
 
@@ -188,7 +187,7 @@
   
 // NAVBAR JADI PUTIH KETIKA DI SECTION
   document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('#navbar .nav-link');
+    const navLinks = document.querySelectorAll('#navbar .scrollto');
     
     const handleScroll = () => {
       const scrollPos = window.scrollY;
@@ -214,7 +213,7 @@
     };
 
 
-
+// ANIMASI SCROLL NAVBAR
     navLinks.forEach(link => {
       link.addEventListener('click', function(event) {
         event.preventDefault();

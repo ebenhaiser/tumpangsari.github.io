@@ -5,6 +5,7 @@ body {
   font-size: 15px;
   line-height: 1.8;
   color: #6c757d;
+  /* max-width: 96%; */
 }
 
 a {
@@ -2194,4 +2195,75 @@ footer .credits {
 
 .modal {
   max-width: 96%;
+}
+
+/* GALLERY PAGE */
+.gallery .controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.gallery .controls .buttons {
+  width: flex;
+  height: flex;
+  font-size: 16px;
+  /* background-color: #ffc85a; */
+  padding: 3px 8px 4px 8px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: #ffffff;
+  border: 3px solid #b99365;
+  border-radius: 8px;
+  margin: 5px;
+  font-weight: normal;
+  font-family: "Rubik", arial, sans-serif;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.gallery .controls .buttons:hover{
+  color: white;
+  background-color: #b99365;
+}
+
+.gallery .controls .buttons.active {
+  color: white;
+  background-color: #b99365;
+}
+
+.gallery .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery .image-container .image {
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  /* border: 15px solid white; */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.gallery .image-container .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+  .gallery .controls .buttons {
+    font-size: 14px;
+    /* background-color: #ffc85a; */
+    padding: 3px 8px 4px 8px;
+    font-weight: 400;
+  }
 }
