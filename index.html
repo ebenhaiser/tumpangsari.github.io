@@ -117,9 +117,8 @@
               <h2 class="heading">Rooms</h2>
           </div>
         </div>
-        <div class="row ">
-
-          <div id="container-rooms" class="row justify-content-center d-flex">
+        <div class="text-center room-subtitle">Yogyakarta</div>
+          <div id="container-rooms-yogyakarta" class="row justify-content-center d-flex">
             <!-- <div class="col-md-6">
               <div class="media d-block room mb-0">
                 <figure>
@@ -140,8 +139,12 @@
               </div>
             </div> -->
           </div>
-
-        </div>
+        </br>
+        </br>
+        <div class="text-center room-subtitle">Jakarta</div>
+          <div id="container-rooms-jakarta" class="row justify-content-center d-flex">
+            
+          </div>
       </div>
     </section>
 
@@ -558,11 +561,13 @@
     <script src="js/main.js"></script>
     <script src="js/data.js"></script>
     <script>
-      const containerRoom = document.getElementById("container-rooms");
-      let conRoom = "";
+// LOOP ROOM YOGYAKATA
+      const containerRoomYogyakarta = document.getElementById("container-rooms-yogyakarta");
+      let conRoomYogyakarta = "";
 
       roomsSection.rooms.forEach((room) => {
-        conRoom += `<div class="col-md-6" data-aos="fade-up">
+        if (room.id >= 0 && room.id <= 2) { 
+        conRoomYogyakarta += `<div class="col-md-4" data-aos="fade-up">
             <div class="media d-block room mb-0">
               <figure>
                 <img src="${room.thumbnail}" alt="Generic placeholder image" class="img-fluid">
@@ -581,14 +586,48 @@
               </div>
             </div>
           </div>`;
-
+        }
       });
-      containerRoom.innerHTML = conRoom;
+      containerRoomYogyakarta.innerHTML = conRoomYogyakarta;
+      // END LOOP ROOM YOGYAKATA
 
-      const containerModalRoom = document.getElementById("container-modal-rooms");
+// LOOP ROOM JAKARTA
+const containerRoomJakarta = document.getElementById("container-rooms-jakarta");
+      let conRoomJakarta = "";
+
+      roomsSection.rooms.forEach((room) => {
+        if (room.id == 3) { 
+        conRoomJakarta += `<div class="col-md-5" data-aos="fade-up">
+            <div class="media d-block room mb-0">
+              <figure>
+                <img src="${room.thumbnail}" alt="Generic placeholder image" class="img-fluid">
+                <div class="overlap-text">
+                  <h>${room.numberOfRoom}</h>
+                </div>
+              </figure>
+              <div class="media-body">
+                <h3 class="mt-0"><a>${room.name}</a></h3> 
+                <ul class="room-specs">
+                  <li><span class="ion-ios-people-outline"></span> ${room.numberOfGuest}</li>
+                  <li><span class="ion-ios-crop"></span> ${room.roomSize} <sup>2</sup></li>
+                </ul>
+                <p>${room.description}</p>
+                <p><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#${room.dataTarget}">More Info</button></p>
+              </div>
+            </div>
+          </div>`;
+        }
+      });
+      containerRoomJakarta.innerHTML = conRoomJakarta;
+      // END LOOP ROOM JAKARTA
+
+
+// LOOP MODAL
+const containerModalRoom = document.getElementById("container-modal-rooms");
 let conModalRoom = "";
 
 roomsSection.rooms.forEach((room) => {
+
   let carouselItems = "";
   let dataSlideTo = "";
 
@@ -665,7 +704,7 @@ roomsSection.rooms.forEach((room) => {
 
 });
 containerModalRoom.innerHTML = conModalRoom;
-
+// END LOOP MODAL
 
 
 

@@ -427,6 +427,15 @@ header .navbar.navbar-light .nav-link.active {
   font-size: 13px;
 }
 
+.room-subtitle {
+  font-size: 27px;
+  color: black;
+  font-family: "Playfair Display", times, serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+
 .site-hero-innerpage, .site-hero-innerpage .site-hero-inner {
   min-height: 550px;
   height: 50vh;
@@ -2082,7 +2091,7 @@ footer .credits {
 
 .modal-title {
   color: black;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .modal-room-info {
