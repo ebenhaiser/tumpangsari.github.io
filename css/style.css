@@ -83,6 +83,13 @@ header .navbar-brand {
   color: #fff !important;
 }
 
+@media (max-width: 768px) {
+  header .navbar-brand {
+    font-size: 14px;
+  }
+}
+
+
 header .navbar {
   padding-top: 0;
   padding-bottom: 0;
@@ -2274,5 +2281,134 @@ footer .credits {
     /* background-color: #ffc85a; */
     padding: 3px 8px 4px 8px;
     font-weight: 400;
+  }
+}
+
+/* LANGUAGE SELECTOR */
+
+.lang-menu {
+  margin-top: 0;
+}
+
+.selected-lang {
+  cursor: pointer;
+}
+
+.selected-lang img {
+  width: 27px;
+}
+
+@media (max-width: 768px) {
+  .selected-lang img {
+    width: 25px;
+  }
+}
+
+.navbar-brand {
+  order: 1;
+}
+.navbar-toggler {
+  order: 3;
+}
+.lang-menu {
+  order: 2;
+  margin-right: 12px;
+  margin-left: auto;
+  position: relative;
+}
+
+.lang-menu ul {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #f8f8f8;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+  right: 0; /* Align the menu to the left */
+  width: 120px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.lang-menu ul li {
+  list-style: none;
+  color: #000;
+  display: flex;
+  /* justify-content: space-evenly;  */
+  cursor: pointer;
+}
+
+.lang-menu ul li img {
+  align-items: center;
+  width: 27px;
+  height: 27px;
+  margin-top: 3px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  box-shadow: 2px rgba(0, 0, 0, 0.2);
+}
+
+.lang-menu ul li a {
+  width: auto;
+  display: block;
+  padding: 0;
+  align-items: center;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  color: #000;
+  display: inline-flex;
+}
+
+/* .lang-menu ul li a:hover {
+  background-color: #f2f2f2;
+} */
+
+/* .lang-menu ul li a:before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  background-image: url("../images/icon/united-kingdom.png");
+} */
+
+.lang-menu:hover ul{
+  display: block;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar-brand {
+  order: 1;
+}
+.navbar-sections {
+  order: 2;
+}
+.lang-menu {
+  order: 3;
+  margin-right: auto;
+  margin-left: 12px;
+}
+
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    order: 1;
+  }
+  .navbar-toggler {
+    order: 3;
+  }
+  .lang-menu {
+    order: 2;
+    margin-right: 12px;
+    margin-left: auto;
+  }
+  .navbar-sections {
+    order: 4;
   }
 }
