@@ -11,7 +11,7 @@ const roomsSection = {
             numberOfGuest: "1-2 Guests",
             roomSize: "12 m",
             bed: "1 Double Bed/1 Trundle Bed",
-            description: "Daily Rent. Check in: 14.00. Check out: 13.00, Shared Kitchenette with refrigerator, coffee/tea maker, and electric stove. Non-Smoking Room. Smoking is only allowed outside the building. Contact us for price & further details.",
+            description: "Daily Rent. Check in: 14.00 & Check out: 13.00, Shared Kitchenette with refrigerator, coffee/tea maker, and electric stove. Non-Smoking Room. Smoking is only allowed outside the building. Contact us for price & further details.",
             modalDescription: "Daily Rent</br>Check in: 14.00</br>Check out: 13.00</br>Shared Kitchenette with refrigerator, coffee/tea maker, and electric stove.</br>Non-Smoking Room.</br>Smoking is only allowed outside the building.</br>Contact us for price & further details.",
             images: [
                 {
@@ -67,7 +67,7 @@ const roomsSection = {
             roomSize: "24 m",
             bed: "1 Queen Bed",
             
-            description: "Daily Rent. Check in: 14.00. Check out: 13.00, Shared Kitchenette with refrigerator, coffee/tea maker, and electric stove. Non-Smoking Room. Smoking is only allowed outside the building. Contact us for price & further details.",
+            description: "Daily Rent. Check in: 14.00 & Check out: 13.00, Shared Kitchenette with refrigerator, coffee/tea maker, and electric stove. Non-Smoking Room. Smoking is only allowed outside the building. Contact us for price & further details.",
             modalDescription: "Daily Rent</br>Check in: 14.00</br>Check out: 13.00</br>Shared Kitchenette with refrigerator, coffee/tea maker, and electric stove.</br>Non-Smoking Room.</br>Smoking is only allowed outside the building.</br>Contact us for price & further details.",
             images: [
                 {
@@ -127,8 +127,8 @@ const roomsSection = {
             numberOfGuest: "1 Guest",
             roomSize: "9 m",
             bed: "1 Multifunctional Bed",
-            description: "Khusus Wanita. Monthly Rent. Tidak termasuk listrik. Dilarang merokok didalam kamar. Merokok Hanya diperbolehkan diluar gedung. Deposit dikembalikan di akhir periode sewa jika tidak ditemukan kerusakan pada kamar. Hubungi kami untuk harga & detail lebih lanjut.",
-            modalDescription: "Khusus wanita</br>Monthly Rent</br>Tidak termasuk listrik</br>Dilarang merokok didalam kamar.</br>Merokok Hanya diperbolehkan diluar gedung.</br>Deposit dikembalikan di akhir periode sewa jika tidak ditemukan kerusakan pada kamar.</br>Hubungi kami untuk harga & detail lebih lanjut.",
+            description: "Woman only. Exc. Electricity. Non-Smoking Room. Smoking is only allowed outside the building. Deposit. Contact us for price & further details.</br></br></br>",
+            modalDescription: "Woman only.</br>Exc. Electricity.</br>Non-Smoking Room.</br>Smoking is only allowed outside the building.</br>Deposit.</br>Contact us for price & further details.",
             images: [
                 {
                     imageId: 0,
@@ -172,7 +172,7 @@ const roomsSection = {
             numberOfGuest: "1-2 Guests",
             roomSize: "51 m",
             bed: "1 Multifunctional Bed",
-            description: "Daily & Monthly Rent. Full Furnished. INC. IPL, EXC. Internet, Electricity & Water Non-Smoking Room Contact us for price & further details",
+            description: "Daily & Monthly Rent. Full Furnished. INC. IPL, EXC. Internet, Electricity & Water Non-Smoking Room Contact us for price & further details.</br></br>",
             modalDescription: "Daily & Monthly Rent</br>Full Furnished</br>INC. IPL</br>EXC. Internet, Electricity & Water</br>Non-Smoking Room</br>Contact us for price & further details",
             images: [
                 {
@@ -239,8 +239,8 @@ const roomsSection = {
             numberOfGuest: "1-2 Guests",
             roomSize: "12 m",
             bed: "1 Double Bed/1 Trundle Bed",
-            description: "Daily Rent. Check in: 14.00. Check out: 13.00, Shared Kitchenette with refrigerator, coffee/tea maker, and electric stove. Non-Smoking Room. Smoking is only allowed outside the building. Contact us for price & further details.",
-            modalDescription: "Daily Rent</br>Check in: 14.00</br>Check out: 13.00</br>Shared Kitchenette with refrigerator, coffee/tea maker, and electric stove.</br>Non-Smoking Room.</br>Smoking is only allowed outside the building.</br>Contact us for price & further details.",
+            description: "Daily Rent. Check in: 14.00 & Check out: 13.00. Dapur bersama dengan kulkas, kompor, dan kopi/teh. Dilarang merokok didalam kamar. Merokok Hanya diluar gedung. Hubungi kami untuk harga & detail lebih lanjut.</br></br>",
+            modalDescription: "Daily Rent</br>Check in: 14.00</br>Check out: 13.00</br>Dapur bersama dengan kulkas, kompor, dan kopi/teh.</br>Dilarang merokok didalam kamar.</br>Merokok Hanya diluar gedung.</br>Hubungi kami untuk harga & detail lebih lanjut.",
             images: [
                 {
                     imageId: 0,
@@ -294,9 +294,8 @@ const roomsSection = {
             numberOfGuest: "1-2 Guests",
             roomSize: "24 m",
             bed: "1 Queen Bed",
-            
-            description: "Daily Rent. Check in: 14.00. Check out: 13.00, Shared Kitchenette with refrigerator, coffee/tea maker, and electric stove. Non-Smoking Room. Smoking is only allowed outside the building. Contact us for price & further details.",
-            modalDescription: "Daily Rent</br>Check in: 14.00</br>Check out: 13.00</br>Shared Kitchenette with refrigerator, coffee/tea maker, and electric stove.</br>Non-Smoking Room.</br>Smoking is only allowed outside the building.</br>Contact us for price & further details.",
+            description: "Daily Rent. Check in: 14.00 & Check out: 13.00. Dapur bersama dengan kulkas, kompor, dan kopi/teh. Dilarang merokok didalam kamar. Merokok Hanya diluar gedung. Hubungi kami untuk harga & detail lebih lanjut.</br></br>",
+            modalDescription: "Daily Rent</br>Check in: 14.00</br>Check out: 13.00</br>Dapur bersama dengan kulkas, kompor, dan kopi/teh.</br>Dilarang merokok didalam kamar.</br>Merokok Hanya diluar gedung.</br>Hubungi kami untuk harga & detail lebih lanjut.",
             images: [
                 {
                     imageId: 0,
@@ -347,8 +346,8 @@ const roomsSection = {
         {
             id: 2,
             dataTarget: "modal-woman-dormitory",
-            name: "Woman Dormitory",
-            modalTitle: "Woman Dormitory",
+            name: "Kost Wanita",
+            modalTitle: "Kost Wanita",
             thumbnail: "../images/dormitory/thumbnail.jpeg",
             numberOfRoom: "10 rooms",
             numberOfRoomModal: "10 rooms",
@@ -400,8 +399,8 @@ const roomsSection = {
             numberOfGuest: "1-2 Guests",
             roomSize: "51 m",
             bed: "1 Multifunctional Bed",
-            description: "Daily & Monthly Rent. Full Furnished. INC. IPL, EXC. Internet, Electricity & Water Non-Smoking Room Contact us for price & further details",
-            modalDescription: "Daily & Monthly Rent</br>Full Furnished</br>INC. IPL</br>EXC. Internet, Electricity & Water</br>Non-Smoking Room</br>Contact us for price & further details",
+            description: "Daily & Monthly Rent. Full Furnished. Termasuk IPL. Tidak termasuk Internet, Listrik & Air. Dilarang merokok didalam kamar. Hubungi kami untuk harga & detail lebih lanjut.</br></br>",
+            modalDescription: "Daily & Monthly Rent.</br>Full Furnished.</br>Termasuk IPL.</br>Tidak termasuk Internet, Listrik & Air.</br>Dilarang merokok didalam kamar.</br>Hubungi kami untuk harga & detail lebih lanjut",
             images: [
                 {
                     imageId: 0,
