@@ -199,8 +199,8 @@
           const sectionTop = section.offsetTop;
           const sectionHeight = section.offsetHeight;
 
-          if (isMobile || scrollPos >= sectionTop - 300) {
-            if (scrollPos >= sectionTop - 300 && scrollPos < sectionTop + sectionHeight - 300) {
+          if (isMobile || scrollPos >= sectionTop - 375) {
+            if (scrollPos >= sectionTop - 375 && scrollPos < sectionTop + sectionHeight - 375) {
               link.classList.add('active-section');
             } else {
               link.classList.remove('active-section');
