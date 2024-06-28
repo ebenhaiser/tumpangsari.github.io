@@ -2213,6 +2213,11 @@ footer .credits {
   max-width: 96%;
 }
 
+.facility {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
 /* GALLERY PAGE */
 .gallery .controls {
   display: flex;
