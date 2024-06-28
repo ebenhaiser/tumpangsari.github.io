@@ -52,7 +52,7 @@ const roomsSection = {
             ],
             facilities: "<h3>AC</h3><h3>TV</h3><h3>Wi-Fi</h3><h3>Water Heater</h3><h3>Private Bathroom</h3>",
             address: "<p>Gg. Kenari Indah I, Miliran UH 2, D.I. Yogyakarta</p>",
-            mapEmbed: "<div class=\"d-flex\"><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.9399978461915!2d110.38991624692304!3d-7.800622005731553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a577ca4f128dd%3A0xf2814706b60fe93!2sGg.%20Kenari%20Indah%20I%2C%20Muja%20Muju%2C%20Kec.%20Umbulharjo%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta%2055165!5e0!3m2!1sen!2sid!4v1718864226541!5m2!1sen!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe></div>",
+            mapEmbed: "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9021912569756!2d110.38633917500515!3d-7.800179192219996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57a101ca5975%3A0xae460d27457adab0!2sTumpang%20Sari%20Doa%20-%20Kost%20%26%20Guesthouse!5e0!3m2!1sen!2sid!4v1719587021634!5m2!1sen!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
         },
 
         {
@@ -60,7 +60,7 @@ const roomsSection = {
             dataTarget: "modal-guest-house-vip",
             name: "Deluxe Room",
             modalTitle: "Guest House: Deluxe Room",
-            thumbnail: "../images/guestHouseVIP/thumbnail.jpg",
+            thumbnail: "../images/guestHouseVIP/thumbnail.jpeg",
             numberOfRoom: "1 room",
             numberOfRoomModal: "1 room",
             numberOfGuest: "1-2 Guests",
@@ -73,47 +73,42 @@ const roomsSection = {
                 {
                     imageId: 0,
                     imageActive: true,
-                    imagePath: "../images/guestHouseVIP/guestHouseVIP1.jpg",
+                    imagePath: "../images/guestHouseVIP/guestHouseVIP1.jpeg",
                 },
                 {
                     imageId: 1,
                     imageActive: false,
-                    imagePath: "../images/guestHouseVIP/guestHouseVIP2.jpg"
+                    imagePath: "../images/guestHouseVIP/guestHouseVIP2.jpeg"
                 },
                 {
                     imageId: 2,
                     imageActive: false,
-                    imagePath: "../images/guestHouseVIP/guestHouseVIP3.jpg",
+                    imagePath: "../images/guestHouseVIP/guestHouseVIP3.jpeg",
                 },
                 {
                     imageId: 3,
                     imageActive: false,
-                    imagePath: "../images/guestHouseVIP/guestHouseVIP4.jpg",
+                    imagePath: "../images/guestHouseVIP/guestHouseVIP4.jpeg",
                 },
                 {
                     imageId: 4,
                     imageActive: false,
-                    imagePath: "../images/guestHouseVIP/guestHouseVIP5.jpg",
+                    imagePath: "../images/guestHouseVIP/guestHouseVIP5.jpeg",
                 },
                 {
                     imageId: 5,
                     imageActive: false,
-                    imagePath: "../images/guestHouseVIP/guestHouseVIP6.jpg",
+                    imagePath: "../images/guestHouseVIP/guestHouseVIP6.jpeg",
                 },
                 {
                     imageId: 6,
                     imageActive: false,
-                    imagePath: "../images/guestHouseVIP/guestHouseVIP7.jpg",
-                },
-                {
-                    imageId: 7,
-                    imageActive: false,
-                    imagePath: "../images/guestHouseVIP/guestHouseVIP8.jpg",
+                    imagePath: "../images/guestHouseVIP/guestHouseVIP7.jpeg",
                 },
             ],
             facilities: "<h3>AC</h3><h3>TV</h3><h3>Wi-Fi</h3><h3>Water Heater</h3><h3>Private Bathroom</h3>",
             address: "<p>Gg. Kenari Indah I, Miliran UH 2, D.I. Yogyakarta</p>",
-            mapEmbed: "<div class=\"d-flex\"><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.9399978461915!2d110.38991624692304!3d-7.800622005731553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a577ca4f128dd%3A0xf2814706b60fe93!2sGg.%20Kenari%20Indah%20I%2C%20Muja%20Muju%2C%20Kec.%20Umbulharjo%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta%2055165!5e0!3m2!1sen!2sid!4v1718864226541!5m2!1sen!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe></div>",
+            mapEmbed: "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9021912569756!2d110.38633917500515!3d-7.800179192219996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57a101ca5975%3A0xae460d27457adab0!2sTumpang%20Sari%20Doa%20-%20Kost%20%26%20Guesthouse!5e0!3m2!1sen!2sid!4v1719587021634!5m2!1sen!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
         },
 
         {
@@ -158,7 +153,7 @@ const roomsSection = {
             ],
             facilities: "<h3>AC</h3><h3>Wi-Fi</h3><h3>Private Bathroom</h3>",
             address: "<p>Gg. Kenari Indah I, Miliran UH 2, D.I. Yogyakarta</p>",
-            mapEmbed: "<div class=\"d-flex\"><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.9399978461915!2d110.38991624692304!3d-7.800622005731553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a577ca4f128dd%3A0xf2814706b60fe93!2sGg.%20Kenari%20Indah%20I%2C%20Muja%20Muju%2C%20Kec.%20Umbulharjo%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta%2055165!5e0!3m2!1sen!2sid!4v1718864226541!5m2!1sen!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe></div>",
+            mapEmbed: "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9021912569756!2d110.38633917500515!3d-7.800179192219996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57a101ca5975%3A0xae460d27457adab0!2sTumpang%20Sari%20Doa%20-%20Kost%20%26%20Guesthouse!5e0!3m2!1sen!2sid!4v1719587021634!5m2!1sen!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
         },
 
         {
@@ -171,7 +166,7 @@ const roomsSection = {
             numberOfRoomModal: "1 bedroom & 1 bathroom",
             numberOfGuest: "1-2 Guests",
             roomSize: "51 m",
-            bed: "1 Multifunctional Bed",
+            bed: "1 Queen Bed",
             description: "Daily & Monthly Rent. Full Furnished. INC. IPL, EXC. Internet, Electricity & Water Non-Smoking Room Contact us for price & further details.</br></br>",
             modalDescription: "Daily & Monthly Rent</br>Full Furnished</br>INC. IPL</br>EXC. Internet, Electricity & Water</br>Non-Smoking Room</br>Contact us for price & further details",
             images: [
@@ -234,9 +229,9 @@ const roomsSection = {
             name: "Standard Room",
             modalTitle: "Guest House: Standard Room",
             thumbnail: "../images/guestHouse/thumbnail.jpg",
-            numberOfRoom: "4 rooms",
-            numberOfRoomModal: "4 rooms",
-            numberOfGuest: "1-2 Guests",
+            numberOfRoom: "4 kamar",
+            numberOfRoomModal: "4 kamar",
+            numberOfGuest: "1-2 orang",
             roomSize: "12 m",
             bed: "1 Double Bed/1 Trundle Bed",
             description: "Daily Rent. Check in: 14.00 & Check out: 13.00. Dapur bersama dengan kulkas, kompor, dan kopi/teh. Dilarang merokok didalam kamar. Merokok Hanya diluar gedung. Hubungi kami untuk harga & detail lebih lanjut.</br></br>",
@@ -278,9 +273,9 @@ const roomsSection = {
                     imagePath: "../images/guestHouse/guestHouse9.jpg",
                 },
             ],
-            facilities: "<h3>AC</h3><h3>TV</h3><h3>Wi-Fi</h3><h3>Water Heater</h3><h3>Private Bathroom</h3>",
+            facilities: "<h3>AC</h3><h3>TV</h3><h3>Wi-Fi</h3><h3>Pemanas Air</h3><h3>Kamar Mandi Pribadi</h3>",
             address: "<p>Gg. Kenari Indah I, Miliran UH 2, D.I. Yogyakarta</p>",
-            mapEmbed: "<div class=\"d-flex\"><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.9399978461915!2d110.38991624692304!3d-7.800622005731553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a577ca4f128dd%3A0xf2814706b60fe93!2sGg.%20Kenari%20Indah%20I%2C%20Muja%20Muju%2C%20Kec.%20Umbulharjo%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta%2055165!5e0!3m2!1sen!2sid!4v1718864226541!5m2!1sen!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe></div>",
+            mapEmbed: "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9021912569756!2d110.38633917500515!3d-7.800179192219996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57a101ca5975%3A0xae460d27457adab0!2sTumpang%20Sari%20Doa%20-%20Kost%20%26%20Guesthouse!5e0!3m2!1sen!2sid!4v1719587021634!5m2!1sen!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
         },
 
         {
@@ -288,10 +283,10 @@ const roomsSection = {
             dataTarget: "modal-guest-house-vip",
             name: "Deluxe Room",
             modalTitle: "Guest House: Deluxe Room",
-            thumbnail: "../images/guestHouseVIP/thumbnail.jpg",
-            numberOfRoom: "1 room",
-            numberOfRoomModal: "1 room",
-            numberOfGuest: "1-2 Guests",
+            thumbnail: "../images/guestHouseVIP/thumbnail.jpeg",
+            numberOfRoom: "1 kamar",
+            numberOfRoomModal: "1 kamar",
+            numberOfGuest: "1-2 orang",
             roomSize: "24 m",
             bed: "1 Queen Bed",
             description: "Daily Rent. Check in: 14.00 & Check out: 13.00. Dapur bersama dengan kulkas, kompor, dan kopi/teh. Dilarang merokok didalam kamar. Merokok Hanya diluar gedung. Hubungi kami untuk harga & detail lebih lanjut.</br></br>",
@@ -300,47 +295,42 @@ const roomsSection = {
                 {
                     imageId: 0,
                     imageActive: true,
-                    imagePath: "../images/guestHouseVIP/guestHouseVIP1.jpg",
+                    imagePath: "../images/guestHouseVIP/guestHouseVIP1.jpeg",
                 },
                 {
                     imageId: 1,
                     imageActive: false,
-                    imagePath: "../images/guestHouseVIP/guestHouseVIP2.jpg"
+                    imagePath: "../images/guestHouseVIP/guestHouseVIP2.jpeg"
                 },
                 {
                     imageId: 2,
                     imageActive: false,
-                    imagePath: "../images/guestHouseVIP/guestHouseVIP3.jpg",
+                    imagePath: "../images/guestHouseVIP/guestHouseVIP3.jpeg",
                 },
                 {
                     imageId: 3,
                     imageActive: false,
-                    imagePath: "../images/guestHouseVIP/guestHouseVIP4.jpg",
+                    imagePath: "../images/guestHouseVIP/guestHouseVIP4.jpeg",
                 },
                 {
                     imageId: 4,
                     imageActive: false,
-                    imagePath: "../images/guestHouseVIP/guestHouseVIP5.jpg",
+                    imagePath: "../images/guestHouseVIP/guestHouseVIP5.jpeg",
                 },
                 {
                     imageId: 5,
                     imageActive: false,
-                    imagePath: "../images/guestHouseVIP/guestHouseVIP6.jpg",
+                    imagePath: "../images/guestHouseVIP/guestHouseVIP6.jpeg",
                 },
                 {
                     imageId: 6,
                     imageActive: false,
-                    imagePath: "../images/guestHouseVIP/guestHouseVIP7.jpg",
-                },
-                {
-                    imageId: 7,
-                    imageActive: false,
-                    imagePath: "../images/guestHouseVIP/guestHouseVIP8.jpg",
+                    imagePath: "../images/guestHouseVIP/guestHouseVIP7.jpeg",
                 },
             ],
-            facilities: "<h3>AC</h3><h3>TV</h3><h3>Wi-Fi</h3><h3>Water Heater</h3><h3>Private Bathroom</h3>",
+            facilities: "<h3>AC</h3><h3>TV</h3><h3>Wi-Fi</h3><h3>Pemanas Air</h3><h3>Kamar Mandi Pribadi</h3>",
             address: "<p>Gg. Kenari Indah I, Miliran UH 2, D.I. Yogyakarta</p>",
-            mapEmbed: "<div class=\"d-flex\"><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.9399978461915!2d110.38991624692304!3d-7.800622005731553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a577ca4f128dd%3A0xf2814706b60fe93!2sGg.%20Kenari%20Indah%20I%2C%20Muja%20Muju%2C%20Kec.%20Umbulharjo%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta%2055165!5e0!3m2!1sen!2sid!4v1718864226541!5m2!1sen!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe></div>",
+            mapEmbed: "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9021912569756!2d110.38633917500515!3d-7.800179192219996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57a101ca5975%3A0xae460d27457adab0!2sTumpang%20Sari%20Doa%20-%20Kost%20%26%20Guesthouse!5e0!3m2!1sen!2sid!4v1719587021634!5m2!1sen!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
         },
 
         {
@@ -349,9 +339,9 @@ const roomsSection = {
             name: "Kost Wanita",
             modalTitle: "Kost Wanita",
             thumbnail: "../images/dormitory/thumbnail.jpeg",
-            numberOfRoom: "10 rooms",
-            numberOfRoomModal: "10 rooms",
-            numberOfGuest: "1 Guest",
+            numberOfRoom: "10 kamar",
+            numberOfRoomModal: "10 kamar",
+            numberOfGuest: "1 orang",
             roomSize: "9 m",
             bed: "1 Multifunctional Bed",
             description: "Khusus Wanita. Monthly Rent. Tidak termasuk listrik. Dilarang merokok didalam kamar. Merokok Hanya diperbolehkan diluar gedung. Deposit dikembalikan di akhir periode sewa jika tidak ditemukan kerusakan pada kamar. Hubungi kami untuk harga & detail lebih lanjut.",
@@ -383,9 +373,9 @@ const roomsSection = {
                     imagePath: "../images/dormitory/dormitory5.jpeg",
                 },
             ],
-            facilities: "<h3>AC</h3><h3>Wi-Fi</h3><h3>Private Bathroom</h3>",
+            facilities: "<h3>AC</h3><h3>Wi-Fi</h3><h3>Kamar Mandi Pribadi</h3>",
             address: "<p>Gg. Kenari Indah I, Miliran UH 2, D.I. Yogyakarta</p>",
-            mapEmbed: "<div class=\"d-flex\"><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.9399978461915!2d110.38991624692304!3d-7.800622005731553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a577ca4f128dd%3A0xf2814706b60fe93!2sGg.%20Kenari%20Indah%20I%2C%20Muja%20Muju%2C%20Kec.%20Umbulharjo%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta%2055165!5e0!3m2!1sen!2sid!4v1718864226541!5m2!1sen!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe></div>",
+            mapEmbed: "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9021912569756!2d110.38633917500515!3d-7.800179192219996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57a101ca5975%3A0xae460d27457adab0!2sTumpang%20Sari%20Doa%20-%20Kost%20%26%20Guesthouse!5e0!3m2!1sen!2sid!4v1719587021634!5m2!1sen!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
         },
 
         {
@@ -395,10 +385,10 @@ const roomsSection = {
             modalTitle: "Apartment",
             thumbnail: "../images/apartment/thumbnail.jpeg",
             numberOfRoom: "1 unit apartment",
-            numberOfRoomModal: "1 bedroom & 1 bathroom",
-            numberOfGuest: "1-2 Guests",
+            numberOfRoomModal: "1 kamar tidur & 1 kamar mandi",
+            numberOfGuest: "1-2 orang",
             roomSize: "51 m",
-            bed: "1 Multifunctional Bed",
+            bed: "1 Queen Bed",
             description: "Daily & Monthly Rent. Full Furnished. Termasuk IPL. Tidak termasuk Internet, Listrik & Air. Dilarang merokok didalam kamar. Hubungi kami untuk harga & detail lebih lanjut.</br></br>",
             modalDescription: "Daily & Monthly Rent.</br>Full Furnished.</br>Termasuk IPL.</br>Tidak termasuk Internet, Listrik & Air.</br>Dilarang merokok didalam kamar.</br>Hubungi kami untuk harga & detail lebih lanjut",
             images: [
@@ -448,7 +438,7 @@ const roomsSection = {
                     imagePath: "../images/apartment/apartment9.jpeg",
                 },
             ],
-            facilities: "<h3>AC</h3><h3>Kitchen</h3><h3>TV</h3><h3>Parking Lot</h3><h3>Internet</h3><h3>Swimming Pool</h3><h3>Gym</h3>",
+            facilities: "<h3>AC</h3><h3>Dapur</h3><h3>TV</h3><h3>Tempat Parkir</h3><h3>Internet</h3><h3>Kolam Renang</h3><h3>Gym</h3>",
             address: "<p>Arandra Residence, Jl. Cempaka Putih Raya No.1 1, RT.1/RW.6, Cemp. Putih Tim., Kec. Cemp. Putih, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10510</p>",
             mapEmbed: "<div class=\"d-flex\"><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6588164421305!2d106.86277427404326!3d-6.176408293810982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c710564caf%3A0xa4e127f3926de7ed!2sArandra%20Residence%20Official!5e0!3m2!1sen!2sid!4v1719059907503!5m2!1sen!2sid\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe></div>",
         },
@@ -490,7 +480,7 @@ const galleryPage = {
         },
         {
             id: 105,
-            imagePath: "../images/galleryGuestHouse/galleryGuestHouse6.jpg",
+            imagePath: "../images/galleryGuestHouse/galleryGuestHouse6.jpeg",
             dataFilter: "guest-house",
             altText: "Guest House Image",
         },
@@ -502,7 +492,7 @@ const galleryPage = {
         },
         {
             id: 107,
-            imagePath: "../images/galleryGuestHouse/galleryGuestHouse8.jpeg",
+            imagePath: "../images/galleryGuestHouse/galleryGuestHouse8.jpg",
             dataFilter: "guest-house",
             altText: "Guest House Image",
         },
@@ -514,7 +504,7 @@ const galleryPage = {
         },
         {
             id: 109,
-            imagePath: "../images/galleryGuestHouse/galleryGuestHouse10.jpg",
+            imagePath: "../images/galleryGuestHouse/galleryGuestHouse10.jpeg",
             dataFilter: "guest-house",
             altText: "Guest House Image",
         },
@@ -550,13 +540,13 @@ const galleryPage = {
         },
         {
             id: 1015,
-            imagePath: "../images/galleryGuestHouse/galleryGuestHouse16.jpg",
+            imagePath: "../images/galleryGuestHouse/galleryGuestHouse16.jpeg",
             dataFilter: "guest-house",
             altText: "Guest House Image",
         },
         {
             id: 1016,
-            imagePath: "../images/galleryGuestHouse/galleryGuestHouse17.jpg",
+            imagePath: "../images/galleryGuestHouse/galleryGuestHouse17.jpeg",
             dataFilter: "guest-house",
             altText: "Guest House Image",
         },
@@ -586,7 +576,7 @@ const galleryPage = {
         },
         {
             id: 1021,
-            imagePath: "../images/galleryGuestHouse/galleryGuestHouse22.jpeg",
+            imagePath: "../images/galleryGuestHouse/galleryGuestHouse22.jpg",
             dataFilter: "guest-house",
             altText: "Guest House Image",
         },
@@ -599,6 +589,12 @@ const galleryPage = {
         {
             id: 1023,
             imagePath: "../images/galleryGuestHouse/galleryGuestHouse24.jpeg",
+            dataFilter: "guest-house",
+            altText: "Guest House Image",
+        },
+        {
+            id: 1024,
+            imagePath: "../images/galleryGuestHouse/galleryGuestHouse25.jpeg",
             dataFilter: "guest-house",
             altText: "Guest House Image",
         },
