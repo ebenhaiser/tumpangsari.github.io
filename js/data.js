@@ -173,47 +173,57 @@ const roomsSection = {
                 {
                     imageId: 0,
                     imageActive: true,
-                    imagePath: "../images/apartment/apartment1.jpeg",
+                    imagePath: "../images/apartment/apartment10.jpg",
                 },
                 {
                     imageId: 1,
                     imageActive: false,
-                    imagePath: "../images/apartment/apartment2.jpeg"
+                    imagePath: "../images/apartment/apartment1.jpeg"
                 },
                 {
                     imageId: 2,
                     imageActive: false,
-                    imagePath: "../images/apartment/apartment3.jpeg",
+                    imagePath: "../images/apartment/apartment2.jpeg",
                 },
                 {
                     imageId: 3,
                     imageActive: false,
-                    imagePath: "../images/apartment/apartment4.jpeg",
+                    imagePath: "../images/apartment/apartment3.jpeg",
                 },
                 {
                     imageId: 4,
                     imageActive: false,
-                    imagePath: "../images/apartment/apartment5.jpeg",
+                    imagePath: "../images/apartment/apartment4.jpeg",
                 },
                 {
                     imageId: 5,
                     imageActive: false,
-                    imagePath: "../images/apartment/apartment6.jpeg",
+                    imagePath: "../images/apartment/apartment5.jpeg",
                 },
                 {
                     imageId: 6,
                     imageActive: false,
-                    imagePath: "../images/apartment/apartment7.jpeg",
+                    imagePath: "../images/apartment/apartment6.jpeg",
                 },
                 {
                     imageId: 7,
                     imageActive: false,
-                    imagePath: "../images/apartment/apartment8.jpeg",
+                    imagePath: "../images/apartment/apartment7.jpeg",
                 },
                 {
                     imageId: 8,
                     imageActive: false,
+                    imagePath: "../images/apartment/apartment8.jpeg",
+                },
+                {
+                    imageId: 9,
+                    imageActive: false,
                     imagePath: "../images/apartment/apartment9.jpeg",
+                },
+                {
+                    imageId: 10,
+                    imageActive: false,
+                    imagePath: "../images/apartment/apartment11.jpg",
                 },
             ],
             facilities: "<h3>AC</h3><h3>Kitchen</h3><h3>TV</h3><h3>Parking Lot</h3><h3>Internet</h3><h3>Swimming Pool</h3><h3>Gym</h3>",
@@ -395,47 +405,57 @@ const roomsSection = {
                 {
                     imageId: 0,
                     imageActive: true,
-                    imagePath: "../images/apartment/apartment1.jpeg",
+                    imagePath: "../images/apartment/apartment10.jpg",
                 },
                 {
                     imageId: 1,
                     imageActive: false,
-                    imagePath: "../images/apartment/apartment2.jpeg"
+                    imagePath: "../images/apartment/apartment1.jpeg"
                 },
                 {
                     imageId: 2,
                     imageActive: false,
-                    imagePath: "../images/apartment/apartment3.jpeg",
+                    imagePath: "../images/apartment/apartment2.jpeg",
                 },
                 {
                     imageId: 3,
                     imageActive: false,
-                    imagePath: "../images/apartment/apartment4.jpeg",
+                    imagePath: "../images/apartment/apartment3.jpeg",
                 },
                 {
                     imageId: 4,
                     imageActive: false,
-                    imagePath: "../images/apartment/apartment5.jpeg",
+                    imagePath: "../images/apartment/apartment4.jpeg",
                 },
                 {
                     imageId: 5,
                     imageActive: false,
-                    imagePath: "../images/apartment/apartment6.jpeg",
+                    imagePath: "../images/apartment/apartment5.jpeg",
                 },
                 {
                     imageId: 6,
                     imageActive: false,
-                    imagePath: "../images/apartment/apartment7.jpeg",
+                    imagePath: "../images/apartment/apartment6.jpeg",
                 },
                 {
                     imageId: 7,
                     imageActive: false,
-                    imagePath: "../images/apartment/apartment8.jpeg",
+                    imagePath: "../images/apartment/apartment7.jpeg",
                 },
                 {
                     imageId: 8,
                     imageActive: false,
+                    imagePath: "../images/apartment/apartment8.jpeg",
+                },
+                {
+                    imageId: 9,
+                    imageActive: false,
                     imagePath: "../images/apartment/apartment9.jpeg",
+                },
+                {
+                    imageId: 10,
+                    imageActive: false,
+                    imagePath: "../images/apartment/apartment11.jpg",
                 },
             ],
             facilities: "<h3>AC</h3><h3>Dapur</h3><h3>TV</h3><h3>Tempat Parkir</h3><h3>Internet</h3><h3>Kolam Renang</h3><h3>Gym</h3>",
@@ -661,58 +681,71 @@ const galleryPage = {
         // Gallery Apartment 
         {
             id: 3001,
-            imagePath: "../images/apartment/apartment1.jpeg",
+            imagePath: "../images/apartment/apartment10.jpg",
             dataFilter: "apartment",
             altText: "Apartment Image",
         },
         {
             id: 3002,
-            imagePath: "../images/apartment/apartment2.jpeg",
+            imagePath: "../images/apartment/apartment11.jpg",
             dataFilter: "apartment",
             altText: "Apartment Image",
         },
         {
             id: 3003,
-            imagePath: "../images/apartment/apartment3.jpeg",
+            imagePath: "../images/apartment/apartment1.jpeg",
             dataFilter: "apartment",
             altText: "Apartment Image",
         },
         {
             id: 3004,
-            imagePath: "../images/apartment/apartment4.jpeg",
+            imagePath: "../images/apartment/apartment2.jpeg",
             dataFilter: "apartment",
             altText: "Apartment Image",
         },
         {
             id: 3005,
-            imagePath: "../images/apartment/apartment5.jpeg",
+            imagePath: "../images/apartment/apartment3.jpeg",
             dataFilter: "apartment",
             altText: "Apartment Image",
         },
         {
             id: 3006,
-            imagePath: "../images/apartment/apartment6.jpeg",
+            imagePath: "../images/apartment/apartment4.jpeg",
             dataFilter: "apartment",
             altText: "Apartment Image",
         },
         {
             id: 3007,
-            imagePath: "../images/apartment/apartment7.jpeg",
+            imagePath: "../images/apartment/apartment5.jpeg",
             dataFilter: "apartment",
             altText: "Apartment Image",
         },
         {
             id: 3008,
-            imagePath: "../images/apartment/apartment8.jpeg",
+            imagePath: "../images/apartment/apartment6.jpeg",
             dataFilter: "apartment",
             altText: "Apartment Image",
         },
         {
             id: 3009,
+            imagePath: "../images/apartment/apartment7.jpeg",
+            dataFilter: "apartment",
+            altText: "Apartment Image",
+        },
+        {
+            id: 3010,
+            imagePath: "../images/apartment/apartment8.jpeg",
+            dataFilter: "apartment",
+            altText: "Apartment Image",
+        },
+        {
+            id: 3011,
             imagePath: "../images/apartment/apartment9.jpeg",
             dataFilter: "apartment",
             altText: "Apartment Image",
         },
+
         // END Gallery Apartment 
     ],
 }
